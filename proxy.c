@@ -187,7 +187,7 @@ void doit(int connfd)
         }
         n=Rio_readlineb(&rio,line,MAXLINE);
     }
-    writeCache(data,&url);
+    writeCache(cache,&url);
     Close(serverfd);
 }
 
